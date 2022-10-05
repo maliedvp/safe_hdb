@@ -1,0 +1,3 @@
+[submodule "input_layer"]
+	path = input_layer
+	url = git@github.com:maliedvp/safe_hdb_inputlayer.git
