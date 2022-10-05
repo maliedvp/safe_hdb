@@ -20,67 +20,13 @@ Note that the repository relies on GitHub submodules. Submodules can either be e
 
 builds all layers of the database, including descriptive statistics and graphical illustrations of the layers, from scratch. The Graph below illustrates the logic of the process. Each yellow rectangular represents a submodule.
 
-<script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
-<!--Mermaid documentation: https://mermaid-js.github.io/mermaid/-->
-<div class="mermaid">
-	flowchart TD
-	    subgraph 1["Input Layer"]
-	        direction BT
-	        subgraph 1.1["Raw Data Access"]
-	            direction LR
-	            UBM["UB Mannheim"] --> SAFE["SAFE DB"]
-	        end
-	        subgraph 1.2["Enrichment"]
-	            direction LR
-	            i2 -->f2
-	        end
-	    end
-	    subgraph 2["Original Layer"]
-	        direction LR
-	        subgraph 2.1["Line Classification"]
-	            direction TB
-	            Tab["Tagging"] --> Train["Model<br/>Training"] --> Pred["Prediction"]
-	        end
-	        subgraph 2.2["Industry Identification"]
-	            direction LR
-	            C --> D
-	        end
-	        subgraph 2.3["Firm Identification"]
-	            direction LR
-	            E --> F
-	        end
-	        subgraph 2.4["Item Identification"]
-	            direction LR
-	            G --> H
-	        end
-	        subgraph 2.5["Parsing"]
-	            direction LR
-	            2.5.1["Line<br/>Combination"] --> 2.5.2["Variable<br/>Extraction"]
-	        end
-	        2.1 --> 2.2
-	        2.2 --> 2.3
-	        2.3 --> 2.4
-	        %%
-	        2.2 --> 2.5
-	        2.3 --> 2.5
-	        2.4 --> 2.5
-	    end
-        subgraph 3["Linking"]
-            direction TB
-            Tab2["Tagging"] --> Train2["Model<br/>Training"] --> Pred2["Prediction"]
-        end
-	    subgraph 4["Graphical Illustrations"]
-	        direction BT
-	        subgraph 4.1
-	            direction LR
-	            X --> Y
-	        end
-	    end
-	    %%arrows between subgraphs
-	    1 --> 2
-	    2 --> 3
-	    3 --> 4
-</div>
+<p align="center">
+	<iframe
+		title = "Flow Chart"
+		src="DOCS/flowchart.html"
+		style="width:90%;height:40%"
+	></iframe>
+</p>
 
 ## Data Model / Database Design <a name="schema"></a>
 
