@@ -5,8 +5,7 @@
     1. [Database Layers](#schema_layers)
     2. [The Layers' Tables](#schema_tables)
     3. [Variable Definitions](#schema_definitions)
-3. [Access](#access)
-3. [Test](#test)
+4. [Access](#access)
 
 
 ## Purpose <a name="purpose"></a>
@@ -90,7 +89,7 @@ embed graph here
 
 embed graphs here
 
-### Variable Definitions <a name="orga_definitions"></a>
+### Variable Definitions <a name="schema_definitions"></a>
 
 ## Access <a name="access"></a>
 
