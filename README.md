@@ -18,7 +18,7 @@ Note that the repository relies on GitHub submodules. Submodules can either be e
 
 ><span style="background-color:#ddd">main.py</span>.
 
-builds all layers of the database, including descriptive statistics and graphical illustrations of the layers, from scratch. The Graph below illustrates the logic of the process. Each yellow rectangular represents a submodule.
+builds all layers of the database, including descriptive statistics and graphical illustrations of the layers, from scratch. The Graph below illustrates the logic of the process. Each gray rectangular represents a submodule.
 
 ```mermaid
 flowchart TD
@@ -88,13 +88,7 @@ embed graph here
 
 ### The Layers' Tables <a name="schema_tables"></a>
 
-<p align="center">
-	<iframe
-		title = "Input Layer"
-		src="https://dbdiagram.io/d/625e67ca2514c97903536190"
-		style="width:90%; height:90%;"
-	></iframe>
-</p>
+embed graphs here
 
 ### Variable Definitions <a name="orga_definitions"></a>
 
